@@ -7,7 +7,7 @@ Projet réalisé en deux semaines en PHP afin de concrétiser mes connaissances 
 - Déconnexion
 - Ajout d'un avis
 - Modification du profil 
-- 
+
 ![1](https://user-images.githubusercontent.com/76882345/152542006-10b35f3e-3e75-49f2-a303-87554e077122.png)
 
 ![2](https://user-images.githubusercontent.com/76882345/152542015-efe83d71-5c39-437f-8aec-2644375226ae.png)
