@@ -1,0 +1,42 @@
+:root {
+  --connexionBackgroundColor: white;
+}
+
+.dark_mode {
+  --connexionBackgroundColor: black;
+}
+
+#main {
+  background-color: var(--connexionBackgroundColor);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.content-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#form {
+  text-align: center;
+  width: 300px;
+  background-color: lightslategray;
+  margin: auto;
+  padding: 10px;
+  color: white;
+}
+
+.text {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+input {
+  margin-top: 10px;
+}
+
+.envoyer {
+  cursor: pointer;
+}

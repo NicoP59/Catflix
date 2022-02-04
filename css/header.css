@@ -1,0 +1,195 @@
+html,
+body {
+  padding: 0%;
+  margin: 0%;
+  scroll-behavior: smooth;
+  font-family: 'noto', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@font-face {
+  font-family: 'noto';
+  src: url('font/notosans-bold-webfont.woff2') format('woff2'),
+    url('font/notosans-bold-webfont.woff') format('woff'),
+    url('font/NotoSans-Bold.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.dark_mode {
+  --color-name: red;
+}
+
+:root {
+  --police: sans-serif;
+  --taille-police: 30px;
+  --color-police: white;
+  --color-blink: black;
+  --color-name: black;
+}
+
+#type-js-auto {
+  color: var(--color-police);
+  font-size: var(--taille-police);
+  font-family: var(--police);
+}
+
+header {
+  background: #4a4e69;
+  /* width: 100vw; */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#img-catflix {
+  margin-top: 50px;
+  width: 30vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nom {
+  text-align: center;
+  color: var(--color-name);
+  padding-bottom: 20px;
+}
+
+/* ************************bouton darkmode *********************************/
+
+.theme_toggler {
+  background-color: #2e2f35;
+  border: 1px solid #121318;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.5);
+}
+
+.theme_toggler .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .theme_toggler .ball {
+  transform: translateX(32px);
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.moon {
+  position: relative;
+  bottom: 2px;
+  right: 1px;
+}
+
+.sun {
+  position: relative;
+  bottom: 2px;
+  right: 2px;
+}
+
+.buttonDarkMode {
+  /* position: relative; */
+  bottom: 80%;
+  left: 90%;
+  margin-left: 10px;
+}
+
+/* ******************************************************************** */
+
+.darkconnect {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 20px;
+}
+
+.connexion {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.inscriptionetc,
+.inscriptionetc2 {
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.inscriptionetc2 {
+  margin-top: 20px;
+}
+
+.webflix {
+  /* width: 100vw; */
+  justify-content: center;
+  display: flex;
+  color: red;
+  font-size: 40px;
+}
+
+.typewriter {
+  /* width: 100vw; */
+  justify-content: center;
+  display: flex;
+  font-size: 20px;
+}
+
+.blink {
+  /*Gestion du bloc*/
+  display: inline-block;
+  margin-left: 2px;
+  /*le style du blink*/
+  color: var(--color-blink);
+  font-weight: bold;
+  /*Supp select user*/
+  user-select: none;
+  /*Lance l'animation*/
+  animation: 0.5s alternate infinite blink;
+  -webkit-animation: 0.5s alternate infinite blink;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

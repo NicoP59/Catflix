@@ -1,0 +1,86 @@
+:root {
+  --articleBackgroundColor: white;
+}
+
+.dark_mode {
+  --articleBackgroundColor: black;
+}
+
+html,
+body {
+  padding: 0%;
+  margin: 0%;
+  scroll-behavior: smooth;
+  font-family: 'noto', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@font-face {
+  font-family: 'noto';
+  src: url('font/notosans-bold-webfont.woff2') format('woff2'),
+    url('font/notosans-bold-webfont.woff') format('woff'),
+    url('font/NotoSans-Bold.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--articleBackgroundColor);
+}
+
+.box {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  background-color: #4a4e69;
+  border: 2px solid black;
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.titre-article {
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.resume {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+#film {
+  margin: 1rem;
+  border: 5px solid black;
+  border-radius: 15px;
+  width: 15vw;
+}
+
+#film:hover {
+  -webkit-animation: opa 3.5s;
+  animation: opa 3.5s;
+}
+
+@-webkit-keyframes opa {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opa {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,124 @@
+:root {
+  --avisBackgroundColor: white;
+}
+
+.dark_mode {
+  --avisBackgroundColor: black;
+}
+
+#main {
+  background: var(--avisBackgroundColor);
+  padding-bottom: 50px;
+}
+
+form,
+form div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  border-radius: 15px;
+  background-color: rgb(76, 85, 95);
+  width: 300px;
+  padding: 10px;
+  color: white;
+  margin: auto;
+}
+
+textarea {
+  resize: none;
+}
+
+.content-comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box {
+  margin: 20px;
+  color: white;
+  background-color: lightslategrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+}
+
+.pseudo-date,
+.message {
+  width: 90%;
+}
+
+.pseudo-date {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid white;
+}
+
+/* h2{ */
+/* text-align: center; */
+/* margin-top: 30px; */
+/* color: grey; */
+/* } */
+
+/* .section{ */
+/* text-align: center; */
+/* } */
+
+/* bouton nouvel avis */
+.new_avis {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  background-color: grey;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.message {
+  /* display: flex; */
+  width: 80%;
+  margin: auto;
+}
+
+/************ bouton retour vers l'accueil **************/
+
+.myButton {
+  box-shadow: inset 0px 39px 0px -24px #e67a73;
+  background-color: #e4685d;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 6px 15px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #b23e35;
+}
+.myButton:hover {
+  background-color: #eb675e;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+input {
+  margin-top: 20px;
+}
+
+.envoyer {
+  cursor: pointer;
+}

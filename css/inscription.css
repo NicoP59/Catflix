@@ -1,0 +1,42 @@
+:root {
+  --inscriptionBackgroundColor: white;
+}
+
+.dark_mode {
+  --inscriptionBackgroundColor: black;
+}
+
+.content-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+#main {
+  background-color: var(--inscriptionBackgroundColor);
+  padding-top: 50px;
+}
+
+.content-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+form {
+  text-align: center;
+  width: 200px;
+  background-color: #4a4e69;
+  margin: auto;
+  padding: 10px;
+  color: white;
+  margin-bottom: 50px;
+}
+
+input {
+  margin-top: 20px;
+}
+
+.envoyer {
+  cursor: pointer;
+}
